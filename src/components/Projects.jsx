@@ -3,7 +3,7 @@ import React from 'react'
 function Projects() {
   return (
 
-       <div className='relative flex-wrap w-[100vw] h-[100vh] bg-purple-100   flex backdrop-blur-lg flex-col items-center pt-[7%]'>
+       <div className='relative flex-wrap w-[100vw] h-[100vh] bg-purple-100   flex backdrop-blur-lg flex-col items-center pt-[7%] font-neuton'>
 
        <h1 className='relative w-[100%] font-medium text-center text-[rgb(30,27,75)] text-5xl cursor-pointer '>My Projects</h1>
 
