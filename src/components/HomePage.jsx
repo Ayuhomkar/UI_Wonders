@@ -55,7 +55,7 @@ function HomePage() {
                     <h3 className='relative w-fit font-medium text-blue-950 text-3xl cursor-pointer  '> <i className='ri-separator text-4xl'></i> Hello</h3>
                     <h1 className='relative w-fit font-medium text-blue-950 text-7xl cursor-pointer max-[650px]:text-[5.5vmax] font-neuton'>I'm <span className='text-[#fb7da5]'>Ayusha</span> Homkar</h1>
 
-                    <h1 className='relative font-medium text-6xl cursor-pointer max-[650px]:text-[4.8vmax] font-neuton z-50 '><FlipWords className=' text-[#06b6d4] max-[650px]:text-[#06b6d4] z-50 w-fit p-0' words={words} duration={1600} /> </h1>
+                    <h1 className='relative font-medium text-6xl cursor-pointer max-[650px]:text-[4.8vmax] font-neuton z-50 '><FlipWords className=' text-cyan-500 max-[650px]:text-cyan-500 z-50 w-fit p-0' words={words} duration={1600} /> </h1>
                     {/* text-[#48b1f1] */}
 
                     <h3 className='relative w-fit font-medium text-blue-950 pt-2 pb-2 text-[1.6vmax] cursor-pointer max-[650px]:mb-[3%] max-[650px]:px-[3%] max-[650px]:text-justify max-[650px]:mr-2 max-[650px]:text-[2.5vmax]'>
