@@ -1,35 +1,103 @@
 import React from 'react'
+import pic from '../assets/coding-2.jpg'
+import project3 from '../assets/coding-2.jpg'
+import portfolio from '../assets/portfolio.png'
+import eduhub from '../assets/Eduhub.png'
+import Trata from '../assets/Trata.png'
+import rover from '../assets/rover.jpg'
+
 
 function Projects() {
-  return (
+    const project = [
 
-       <div className='relative flex-wrap w-[100vw] h-[100vh] bg-purple-100   flex backdrop-blur-lg flex-col items-center pt-[7%] font-neuton'>
+        {
+            img: portfolio,
+            type: 'Portfolio',
+            title: 'UI Wonders',
+            role: 'Developer',
+            tech: ["ReactJs", "MongoDB", "ExpressJS", "NodeJS", "Tailwind-CSS"],
+            date: '2024'
+        },
 
-       <h1 className='relative w-[100%] font-medium text-center text-[rgb(30,27,75)] text-5xl cursor-pointer '>My Projects</h1>
+        {
+            img: eduhub,
+            type: 'Web development',
+            title: 'Edu-Hub',
+            role: 'Frontend development lead',
+            tech: ["ReactJs", "MongoDB", "MERN stack", "Tailwind-CSS", "Figma","Socket.io"],
+            date: '2024'
+        },
 
-       <div className='relative flex-wrap flex-row w-[100vw] h-[100vh] bg-purple-100   flex backdrop-blur-lg  items-center'>
+        {
+            img: Trata,
+            type: 'AI-ML, IoT',
+            title: 'Trata (Patented)',
+            role: 'App frontend developer, embedded system dev',
+            tech: ["ML", "Android", "Iot", "Firebase"],
+            date: '2023'
+        },
 
-           {/* Project cards */}
+        {
+            img: rover,
+            type: 'IoT, Python',
+            title: 'WallE Rover',
+            role: 'Website development',
+            tech: ["Python", "Streamlite", "IoT sensors", "Embeded systems"],
+            date: '2022'
+        }
 
-           <div className="m-12 bg-gray-700 max-w-[300px] rounded-xl hover:bg-gray-900 hover:scale-110 duration-700 p-5">
-               <figure className="w-10 h-10 p-2 bg-blue-800 rounded-md">
-                   <svg width="24" height="24" fill="#FFFFFF">
-                       <path d="M18.799 7.038c-.496-.535-.799-1.252-.799-2.038 0-1.656 1.344-3 3-3s3 1.344 3 3-1.344 3-3 3c-.146 0-.29-.01-.431-.031l-3.333 6.032c.475.53.764 1.231.764 1.999 0 1.656-1.344 3-3 3s-3-1.344-3-3c0-.583.167-1.127.455-1.587l-2.565-3.547c-.281.087-.58.134-.89.134l-.368-.022-3.355 6.069c.451.525.723 1.208.723 1.953 0 1.656-1.344 3-3 3s-3-1.344-3-3 1.344-3 3-3c.186 0 .367.017.543.049l3.298-5.967c-.52-.539-.841-1.273-.841-2.082 0-1.656 1.344-3 3-3s3 1.344 3 3c0 .617-.187 1.191-.507 1.669l2.527 3.495c.307-.106.637-.164.98-.164.164 0 .325.013.482.039l3.317-6.001zm-3.799 7.962c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-6-8c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z"></path>
-                   </svg>
-               </figure>
-               <h4 className="py-2 text-white font-bold">Jesus Echeverria</h4>
-               <p className="text-base leading-7 text-white font-semibold space-y-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-               <p className="text-sm leading-7 text-slate-300 space-y-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro est numquam ipsa consequatur provident fugiat quaerat cupiditate temporibus cum?</p>
-               <div className="pt-5 pb-2 flex justify-center">
-                   <button className="w-36 h-10 font-semibold rounded-md bg-indigo-100 hover:scale-90 duration-500">Button</button>
-               </div>
-           </div>
+    ]
 
 
-       </div>
+    return (
 
-   </div>
-  )
+        <div className='relative flex-wrap w-[100%] h-[80vh] bg-purple-100  flex backdrop-blur-lg flex-row items-center max-[650px]:h-fit max-[650px]:flex-col max-[650px]:justify-center font-neuton '>
+
+            <h1 className='relative w-[100%] h-fit font-medium text-center text-[rgb(30,27,75)] text-6xl cursor-pointer max-[650px]:py-6'>My Projects</h1>
+
+            <div className='relative flex-wrap flex-row w-full h-[80vh]   flex   items-center justify-around max-[650px]:flex-row max-[650px]:flex-wrap max-[650px]:h-fit max-[650px]:gap-5 '>
+
+                {/* Project cards */}
+               
+                {
+                    project.map((obj) => {
+                        return (
+                            <div className="relative group  cursor-pointer group overflow-hidden text-gray-50 h-[60%] w-[20%] rounded-2xl hover:duration-700 duration-700 max-[650px]:w-[80%] max-[650px]:h-[53vh]  ">
+                                <div className="w-full h-full text-gray-800" style={{ backgroundImage: `url(${obj.img})`, backgroundSize: 'cover' }}>
+                                    <div className="flex flex-row justify-between">
+                                    </div>
+                                </div>
+                                <div className="absolute bg-gray-50 -bottom-[40%] w-full p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+                                    <span className="text-cyan-600 font-bold text-xl">{obj.type}</span>
+                                    <span className="text-blue-950 font-bold text-3xl">{obj.title}</span>
+                                    <p className="text-slate-900">Role:{obj.role}</p>
+                                    <div className='relative w-full h-fit flex flex-row items-center flex-wrap gap-[2%]'>
+                                        {
+                                            obj.tech.map((t)=> {return <p className='text-slate-50 bg-slate-900 px-[2%] rounded-lg m-[1%]'>{t}</p> } )
+                                        }
+
+                                    </div>
+                                    <div className='flex flex-row w-full h-fit items-center  gap-24 text-slate-900'>
+                                        <h1>
+                                            <i className="ri-calendar-check-line "></i> {obj.date}
+                                        </h1>
+                                        <h1 className='flex flex-row items-center hover:text-cyan-500 '>Show project <i className="ri-separator text-3xl font-thin pt-[5%] pl-1 "></i>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                        )
+                    })
+
+                }
+
+
+
+            </div>
+
+        </div>
+    )
 }
 
 export default Projects

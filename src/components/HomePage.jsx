@@ -21,7 +21,7 @@ function HomePage() {
         // Main div
 
 
-        <div className='relative w-[100vw] h-fit overflow-x-hidden max-[650px]:flex max-[650px]:flex-col overflow-y-hidden font-neuton'>
+        <div className='relative w-[100%] h-fit overflow-x-hidden max-[650px]:flex max-[650px]:flex-col overflow-y-hidden font-neuton'>
 
 
             {/* background circle div */}
@@ -36,7 +36,7 @@ function HomePage() {
                 }}
             />
             <div
-                className="absolute top-[30%] left-[15%] h-full w-full bg-gradient-to-r from-[#f179ad] to-[#c667f6] blur-lg -z-10 "
+                className="absolute top-[20%] left-[15%] h-full w-full bg-gradient-to-r from-[#f179ad] to-[#c667f6] blur-lg -z-10 "
                 style={{
                     clipPath: `circle(${circle2Position.x}px at ${circle2Position.x}px ${circle2Position.y}px)`,
                     animation: 'move 5s linear infinite',
@@ -46,7 +46,7 @@ function HomePage() {
 
             {/* hello first front div */}
 
-            < div className='relative flex-wrap w-[100vw] h-[80vh] bg-gradient-to-r from-[#f2eaf8]/70 to-[#fef5f8]/70 backdrop-blur-lg flex flex-row items-center justify-start max-[650px]:flex-col-reverse max-[650px]:flex-nowrap max-[650px]:h-[110vh]   '>
+            < div className='relative flex-wrap w-[100%] h-[80vh] bg-gradient-to-r from-[#f2eaf8]/70 to-[#fef5f8]/70 backdrop-blur-lg flex flex-row items-center justify-start max-[650px]:flex-col-reverse max-[650px]:flex-nowrap max-[650px]:h-[110vh]   '>
 
 
                 {/* Left text div */}

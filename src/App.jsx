@@ -4,6 +4,9 @@ import HomePage from './components/HomePage'
 import WorkExp from './components/WorkExp'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
+import Skills from './components/Skills'
+
+
 
 function App() {
 
@@ -13,7 +16,8 @@ function App() {
     <HomePage/>
     <WorkExp/>
     <AboutMe/>
-    {/* <Projects/> */}
+    <Projects/>
+    <Skills/>
     </>
   )
 }

@@ -6,9 +6,9 @@ import ESD from '../assets/ESD.jpeg'
 function WorkExp() {
     return (
 
-        < div className='relative w-[100%] h-fit  flex flex-col items-start justify-start px-36 pt-16 pb-24 gap-4  max-[650px]:m-0 max-[650px]:p-0 max-[650px]:items-center  max-[650px]:justify-center max-[650px]:h-fit max-[650px]:pb-5 max-[650px]:gap-[1%] bg-[#F8F8FF] font-neuton  ' >
+        < div className='relative w-[100%] h-fit  flex flex-col items-start justify-start px-36 pt-16 pb-24 gap-4  max-[650px]:m-0 max-[650px]:p-0 max-[650px]:items-center  max-[650px]:justify-center max-[650px]:h-fit max-[650px]:pb-5 max-[650px]:gap-[1%] bg-[#F8F8FF] font-neuton ' >
 
-            <h1 className='relative w-[100%] font-medium text-center text-[rgb(30,27,75)] text-6xl cursor-pointer  max-[650px]:text-[5.4vmax]  max-[650px]:pt-[10%]'>Work Experience
+            <h1 className='relative w-[100%] font-medium text-center text-[rgb(30,27,75)] text-6xl cursor-pointer  max-[650px]:text-[5.4vmax]  max-[650px]:pt-[10%] '>Work Experience
             </h1>
 
 

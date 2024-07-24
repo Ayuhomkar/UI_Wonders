@@ -5,7 +5,7 @@ import cv from '../assets/Ayusha_Homkar_CV.pdf'
 function AboutMe() {
   return (
 
-    < div className='relative flex-wrap w-[100vw] h-[80vh] bg-gradient-to-b from-[#F8F8FF] via-purple-100 to-purple-100  flex backdrop-blur-lg flex-row items-center max-[650px]:h-fit max-[650px]:flex-col max-[650px]:justify-center font-neuton '>
+    < div className='relative flex-wrap w-[100%] h-[80vh] bg-gradient-to-b from-[#F8F8FF] via-purple-100 to-purple-100  flex backdrop-blur-lg flex-row items-center max-[650px]:h-fit max-[650px]:flex-col max-[650px]:justify-center font-neuton '>
 
     {/* bg-gradient-to-br from-rose-100 via-purple-200 to-purple-200          from-rose-50  */}
 
@@ -31,7 +31,7 @@ function AboutMe() {
             Passionate Computer Science graduate with expertise in HTML, CSS, JavaScript, React, and MongoDB. I specialize in crafting seamless user experiences and have contributed to cutting-edge projects like a patented crop prediction system using machine learning and the EduHub online education platform.I thrive on turning complex problems into elegant solutions and am always eager to embrace new challenges.
         </h3>
         {/* right buttons about div */}
-        <div className='relative h-fit  flex flex-row items-start  gap-12 pt-7 max-[650px]:w-[100%] max-[650px]:p-[5%] max-[650px]:justify-center'>
+        <div className='relative h-fit  flex flex-row items-start  gap-12 pt-5 max-[650px]:w-[100%] max-[650px]:p-[5%] max-[650px]:justify-center'>
             {/* //[#f92a68] */}
             <button className="bg-[#f9634f] text-[#ffe9f0] border border-[#fac8d7] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group max-[650px]:text-[2.5vmax] text-[1.3vmax]">
                 <span className="bg-[#f9abc3] shadow-[#fba8c1] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
