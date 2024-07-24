@@ -1,9 +1,13 @@
 import React from 'react'
 import coding from '../assets/coding-2.jpg'
 import cv from '../assets/Ayusha_Homkar_CV.pdf'
+import { Element } from 'react-scroll'
 
 function AboutMe() {
   return (
+    
+    <Element name='AboutMe'>
+
 
     < div className='relative flex-wrap w-[100%] h-[80vh] bg-gradient-to-b from-[#F8F8FF] via-purple-100 to-purple-100  flex backdrop-blur-lg flex-row items-center max-[650px]:h-fit max-[650px]:flex-col max-[650px]:justify-center font-neuton '>
 
@@ -51,6 +55,9 @@ function AboutMe() {
 
 
 </div>
+
+</Element>
+
   )
 }
 

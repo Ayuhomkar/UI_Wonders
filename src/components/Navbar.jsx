@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import {Link} from 'react-scroll';
 
 function Navbar() {
     const [isNavOpen, setisNavOpen] = useState(false);
@@ -39,30 +40,32 @@ function Navbar() {
                 {/* Menu div */}
                 <i className="ri-menu-3-line hidden max-[650px]:block pr-4 text-[3vmax]" onClick={() => { setisNavOpen(!isNavOpen); console.log(isNavOpen) }}></i>
                 <div className='Menu relative h-full w-[50%] flex flex-row items-center justify-around max-[650px]:hidden '>
-                    <h3 className='relative w-fit font-medium text-gray-800 text-xl cursor-pointer hover:text-cyan-500 duration-300'>
+                    <Link to='home' smooth={true} duration={500} className='relative w-fit font-medium text-gray-800 text-xl cursor-pointer hover:text-cyan-500 duration-300'>
                         Home
-                    </h3>
-                    <h3 className='relative w-fit font-medium text-gray-800 text-xl cursor-pointer hover:text-cyan-500 duration-300'>
+                    </Link>
+                    <Link to='AboutMe' smooth={true} duration={500} className='relative w-fit font-medium text-gray-800 text-xl cursor-pointer hover:text-cyan-500 duration-300'>
                         About me
-                    </h3>
-                    <h3 className='relative w-fit font-medium text-gray-800 text-xl cursor-pointer hover:text-cyan-500 duration-300'>
+                    </Link>
+                    <Link to='Projects' smooth={true} duration={500} className='relative w-fit font-medium text-gray-800 text-xl cursor-pointer hover:text-cyan-500 duration-300'>
                         Projects
-                    </h3>
+                    </Link>
                     <h3 className='relative w-fit font-medium text-gray-800 text-xl cursor-pointer hover:text-cyan-500 duration-300' onClick={() => setisDrawerOpen(true)}>
                         Contact
                     </h3>
                 </div>
 
+                {/* Mob menue */}
+
                 {isNavOpen && <div className={`Mobile-menu w-[40vw] absolute right-0 h-[22vh] flex-col hidden max-[650px]:flex max-[650px]:items-center max-[650px]:gap-4 max-[650px]:top-[10vh] backdrop-blur-md max-[650px]:duration-500 max-[650px]:bg-[#fdf4ff] max-[650px]:transition-all max-[650px]:ease-in-out ${isNavOpen ? 'max-[650px]:translate-x-0' : 'max-[650px]:-translate-x-4'}`}>
-                    <h3 className='relative w-fit font-medium text-gray-800 text-[2.5vmax] cursor-pointer hover:text-cyan-500 duration-300'>
+                    <Link to='home' smooth={true} duration={500} className='relative w-fit font-medium text-gray-800 text-[2.5vmax] cursor-pointer hover:text-cyan-500 duration-300'>
                         Home
-                    </h3>
-                    <h3 className='relative w-fit font-medium text-gray-800 text-[2.5vmax] cursor-pointer hover:text-cyan-500 duration-300'>
+                    </Link>
+                    <Link to='AboutMe' smooth={true} duration={500} className='relative w-fit font-medium text-gray-800 text-[2.5vmax] cursor-pointer hover:text-cyan-500 duration-300'>
                         About me
-                    </h3>
-                    <h3 className='relative w-fit font-medium text-gray-800 text-[2.5vmax] cursor-pointer hover:text-cyan-500 duration-300'>
+                    </Link>
+                    <Link to='Projects' smooth={true} duration={500} className='relative w-fit font-medium text-gray-800 text-[2.5vmax] cursor-pointer hover:text-cyan-500 duration-300'>
                         Projects
-                    </h3>
+                    </Link>
                     <h3 className='relative w-fit font-medium text-gray-800 text-[2.5vmax] cursor-pointer hover:text-cyan-500 duration-300' onClick={() => setisDrawerOpen(true)}>
                         Contact
                     </h3>
