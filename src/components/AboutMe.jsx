@@ -15,7 +15,7 @@ function AboutMe() {
 
     {/* Left div about pic*/}
 
-    <div className='relative w-[50%] h-full  flex flex-col items-start pt-24 pl-20 pr-20 gap-4 max-[650px]:p-0 max-[650px]:w-[100%] max-[650px]:h-[50%] max-[650px]:p-[4%]'>
+    <div className='relative w-[50%] h-full  flex flex-col items-start pt-24 pl-20 pr-20 gap-4 max-[650px]:w-[100%] max-[650px]:h-[50%] max-[650px]:p-[4%]'>
         {/* img to be upload */}
         <img src={coding} alt="img" />
     </div>
@@ -32,14 +32,14 @@ function AboutMe() {
         </h3>
 
         <h3 className='relative w-[70%] h-fit  flex flex-col items-start pt-4 gap-4  text-xl max-[650px]:w-[100%] max-[650px]:px-[5%] max-[650px]:text-justify max-[650px]:text-[2.3vmax]'>
-            Passionate Computer Science graduate with expertise in HTML, CSS, JavaScript, React, and MongoDB. I specialize in crafting seamless user experiences and have contributed to cutting-edge projects like a patented crop prediction system using machine learning and the EduHub online education platform.I thrive on turning complex problems into elegant solutions and am always eager to embrace new challenges.
+            Passionate Computer Science graduate with expertise in HTML, CSS, JavaScript, React, and MongoDB. I specialize in crafting seamless user experiences and have contributed to cutting-edge projects like a patented crop prediction system using machine learning and the EduHub online education platform. I thrive on turning complex problems into elegant solutions and am always eager to embrace new challenges.
         </h3>
         {/* right buttons about div */}
         <div className='relative h-fit  flex flex-row items-start  gap-12 pt-5 max-[650px]:w-[100%] max-[650px]:p-[5%] max-[650px]:justify-center'>
-            {/* //[#f92a68] */}
+           
             <button className="bg-[#f9634f] text-[#ffe9f0] border border-[#fac8d7] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group max-[650px]:text-[2.5vmax] text-[1.3vmax]">
                 <span className="bg-[#f9abc3] shadow-[#fba8c1] absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                Contact me
+                <a href="mailto:ayushahomkar@gmail.com"> Contact me </a>
             </button>
 
 

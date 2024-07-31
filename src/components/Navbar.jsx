@@ -72,7 +72,7 @@ function Navbar() {
                 </div>}
             </div>
 
-            {/* Contact Drawer */}
+            {/* Contact me Drawer section */}
 
             <div id="drawer-contact" className={`fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'} bg-white w-80 dark:bg-gray-800`} tabindex="-1" aria-labelledby="drawer-contact-label">
                 <h5 id="drawer-label" className="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400">
