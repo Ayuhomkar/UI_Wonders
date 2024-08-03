@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ProjectDetails() {
+function ProjectDetails({project}) {
+    console.log(project)
     return (
         <div className='relative h-fit w-full flex flex-col   font-neuton'>
 

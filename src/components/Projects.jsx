@@ -4,9 +4,14 @@ import eduhub from '../assets/Eduhub.png'
 import Trata from '../assets/Trata.png'
 import rover from '../assets/rover.jpg'
 import { Element } from 'react-scroll'
+import { useNavigate } from 'react-router-dom'
 
 
-function Projects() {
+function Projects(props) {
+
+    const navi=useNavigate()
+
+
     const project = [
 
         {
@@ -36,7 +41,7 @@ function Projects() {
             role: 'App frontend developer, embedded system dev',
             tech: ["ML", "Android", "Iot", "Firebase"],
             date: '2023',
-            link:'https://ayuhomkar.github.io/UI_Wonders/'
+            link:'https://youtu.be/7YcE06znHCg?feature=shared'
         },
 
         {
@@ -46,10 +51,15 @@ function Projects() {
             role: 'Website development',
             tech: ["Python", "Streamlite", "IoT sensors", "Embeded systems"],
             date: '2022',
-            link:''
+            link:'https://github.com/Ayuhomkar/WallE-rover'
         }
 
     ]
+
+    function changeProject(){
+        navi('/projectDetail')
+        
+    }
 
 
     return (
@@ -65,7 +75,7 @@ function Projects() {
                     {/* Project cards */}
 
                     {
-                        project.map((obj) => {
+                        project.map((obj,idx) => {
                             return (
                                 <div className="relative group  cursor-pointer group overflow-hidden text-gray-50 h-[60%] w-[20%] rounded-2xl hover:duration-700 duration-700 max-[650px]:w-[80%] max-[650px]:h-[52vh]  ">
                                     <div className="w-full h-full text-gray-800" style={{ backgroundImage: `url(${obj.img})`, backgroundSize: 'cover' }}>
@@ -86,7 +96,7 @@ function Projects() {
                                             <h1>
                                                 <i className="ri-calendar-check-line "></i> {obj.date}
                                             </h1>
-                                            < a href={obj.link} className='flex flex-row items-center hover:text-cyan-500 '>Show project <i className="ri-separator text-3xl font-thin pt-[5%] pl-1 "></i>
+                                            < a onClick={()=>{changeProject(); props.toggleproject(idx)}} className='flex flex-row items-center hover:text-cyan-500 '>Show project <i className="ri-separator text-3xl font-thin pt-[5%] pl-1 "></i>
                                             </a>
                                         </div>
                                     </div>
